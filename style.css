@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: none;
+}
+
+body {
+  background-color: #2d2d2d;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.x_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.number > span {
+  font-size: 6rem;
+  color: #fff;
+  font-weight: bold;
+}
+
+.number_text {
+  display: flex;
+  gap: 5px;
+}
+
+.number_text > input {
+  font-size: 2rem;
+  width: 90%;
+  border: none;
+  border-radius: 4px;
+  padding: 4px;
+  &:focus {
+    outline: none;
+  }
+}
+
+.number_text > button {
+  font-size: 2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 4px;
+  background-color: #10ff9f;
+  cursor: pointer;
+  &:hover {
+    background-color: #00ff4c;
+  }
+}
+
+.message {
+  display: none;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #a1a1a1;
+  min-height: 200px;
+  min-width: 200px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  transition: all 0.5s ease;
+}
+
+.message > span {
+  font-size: 7em;
+  color: #00ff4c;
+  font-weight: bolder;
+}
+.message > p {
+  font-size: 1.5em;
+  color: floralwhite;
+}
+
+.message > span > .fa-xmark {
+  color: red;
+}
