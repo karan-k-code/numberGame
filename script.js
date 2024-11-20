@@ -17,7 +17,7 @@ sendButton.addEventListener("click", () => {
 
   message.style.display = "flex";
 
-  if (search.text === text) {
+  if (search.text === text.toLowerCase()) {
     successMessage();
     numberText.value = "";
     setTimeout(() => {
