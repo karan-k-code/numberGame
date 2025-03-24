@@ -4,7 +4,7 @@ const number = document.getElementById("number");
 const message = document.getElementById("message");
 
 const next = () => {
-  numberM = getRandomIntInclusive(1, 10);
+  numberM = getRandomIntInclusive(1, 20);
   number.innerText = numberM;
 };
 
